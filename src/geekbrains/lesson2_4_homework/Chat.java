@@ -72,7 +72,6 @@ public class Chat extends JFrame{
 
     // отправка сообщения
 
-
     void sendMessage() {
         String out = jtf.getText();
         jta.append(getTime() + ": " + out + "\n");
@@ -81,7 +80,6 @@ public class Chat extends JFrame{
         jtf.setText("");
         jtf.grabFocus();
     }
-
 
     public String getTime() {
         return new SimpleDateFormat("HH:mm:ss").format(new Date());
